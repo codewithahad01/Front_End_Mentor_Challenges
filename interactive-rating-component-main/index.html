@@ -5,10 +5,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
+  <link href="./main.css" rel="stylesheet" type="text/css">
   <title>Frontend Mentor | Interactive rating component</title>
-
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
   <style>
     .attribution { font-size: 11px; text-align: center; }
     .attribution a { color: hsl(228, 45%, 44%); }
@@ -16,34 +14,39 @@
 </head>
 <body>
 
+    <main class="container">
+      <div class="content">
+          <div class="logo">
+            <img class="logo" src="./images/icon-star.svg" alt="image" />
+          </div>
+          <h1 class="header">How did we do?</h1>
+          <p class="text"> Please let us know how we did with your support request. All feedback is appreciated 
+            to help us improve our offering!</p>
+            <div class="rating">
+                <button class="rating-star star1" type="submit" onclick={ratingSubmit}>1</button>
+                <button class="rating-star star2" type="submit" onclick={ratingSubmit}>2</button>
+                <button class="rating-star star3" type="submit" onclick={ratingSubmit}>3</button>
+                <button class="rating-star star4" type="submit" onclick={ratingSubmit}>4</button>
+                <button class="rating-star star5" type="submit" onclick={ratingSubmit}>5</button>
+            </div>
+            <center>
+              <button class="btn-submit" type="submit" onclick={ratingSubmit}>Submit</button>
+            </center>
+      </div>
+    </main>
+  
+
+
 
   
-  <!-- Rating state start -->
-
-  
 
 
+  <!-- You selected Add rating here out of 5
 
-
-  How did we do?
-
-  Please let us know how we did with your support request. All feedback is appreciated 
-  to help us improve our offering!
-
-  1 2 3 4 5
-
-  Submit
-
-  <!-- Rating state end -->
-
-  <!-- Thank you state start -->
-
-  You selected <!-- Add rating here --> out of 5
-
-  Thank you!
+  <!-- Thank you!
 
   We appreciate you taking the time to give a rating. If you ever need more support, 
-  don’t hesitate to get in touch!
+  don’t hesitate to get in touch! --> 
 
   
 
@@ -52,5 +55,7 @@
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
     Coded by <a href="#">Your Name Here</a>.
   </div>
+
+
 </body>
 </html>
