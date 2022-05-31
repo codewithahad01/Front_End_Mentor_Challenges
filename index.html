@@ -5,24 +5,46 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            clifford: '#da373d',
+          }
+        }
+      }
+    }
+  </script>
   <title>Frontend Mentor | QR code component</title>
-
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
   <style>
     .attribution { font-size: 11px; text-align: center; }
     .attribution a { color: hsl(228, 45%, 44%); }
   </style>
 </head>
-<body>
+<body >
 
-  Improve your front-end skills by building projects
-
-  Scan the QR code to visit Frontend Mentor and take your coding skills to the next level
+    <main class="bg-white p-10 text-center xl:px-56  lg:mx-80 md:mx-52 ">
+      <div class="flex flex-col rounded-3xl justify-items-center container p-14 bg-gray-300">
+        <img class="w-full rounded-3xl" src="./images/image-qr-code.png" alt="image" />
+        <p class="text-2xl font-bold mt-8 mb-3">Improve your front-end skills by building projects</p>
+        <p class="text-gray-700 text-md">Scan the QR code to visit Frontend Mentor and take your coding skills to the next level</p>
+      </div>
+    </main>
   
+
+  
+  
+
+
+
+
+
+
   <div class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
+    Coded by <a href="#">Ahad</a>.
   </div>
 </body>
 </html>
