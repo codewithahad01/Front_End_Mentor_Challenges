@@ -7,6 +7,13 @@ const btn5 = document.getElementById('btnradio5');
 
 
 submitBtn.addEventListener('click', function(e) {
-    console.log('gello')
+    btn1Clicked();
 })
 
+function btn1Clicked() {
+    btn1.checked = true;
+    btn2.checked = false;
+    btn3.checked = false;
+    btn4.checked = false;
+    btn5.checked = false;
+}
